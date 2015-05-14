@@ -1,0 +1,34 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context=".MainActivity">
+    <EditText
+        android:id="@+id/et_user_name"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:hint="用户名"
+        android:layout_centerHorizontal="true"
+        />
+    <EditText
+        android:id="@+id/et_server_addr"
+        android:layout_width="240dp"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_user_name"
+        android:hint="服务器地址"
+        android:layout_centerHorizontal="true"
+        />
+    <Button
+        android:id="@+id/btn_async"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/et_server_addr"
+        android:text="@string/text_async_contact"
+        android:layout_centerHorizontal="true"
+        />
+
+</RelativeLayout>
