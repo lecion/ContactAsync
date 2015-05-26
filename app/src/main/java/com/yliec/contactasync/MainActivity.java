@@ -154,10 +154,13 @@ public class MainActivity extends ActionBarActivity {
                     Log.d(TAG, phone + " false" );
                 }
             }
+            Log.d("原来的", sb.toString());
             phoneCursor.close();
             if (sb.length() > 0) {
                 contact.put("username", contactName);
-                contact.put("phone", sb.substring(0, sb.length() - 2));
+                String phoneSub = sb.substring(0, sb.length() - 1);
+                contact.put("phone", phoneSub);
+                Log.d("原来的sub后", phoneSub);
             }
             contacts.add(contact);
             sb = null;
